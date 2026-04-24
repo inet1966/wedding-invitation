@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, sans-serif;
+  background: #faf7f5;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #fff, #f7eaea);
+  padding: 20px;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.invite-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Names */
+.names {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.eng-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  display: block;
+  margin: 5px 0;
+}
+
+/* Sections */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Text */
+.date {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.place {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.address {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Gallery */
+.gallery img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  margin: 10px 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #d88;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Bank */
+.bank .card {
+  background: #fff;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 12px;
+  max-width: 420px;
+}
+
+.bank button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: #d88;
+  color: white;
+  border-radius: 6px;
+}
+
+.map-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}

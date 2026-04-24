@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Jack & Sohyun Wedding</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>💍 Our Wedding 💍</h1>
+
+    <p class="invite-text">
+      We are starting a new journey together.<br>
+      We would be honored to have you celebrate this special day with us.<br>
+      Your presence would mean so much to us.
+    </p>
+
+<p class="names">
+  Groom : <span class="eng-name">Jack Vachon</span><br>
+  Bride : <span class="eng-name">Sohyun Kwag</span>
+</p>
+    
+    <p class="date">Date : 2026.6.6 (Sat)</p>
+    <p class="place">Location : The 801<br>
+                                          801 Islington St STE 12, Portsmouth, NH 03801 미국</p>
+  </section>
+
+  <!-- KOREAN TITLE -->
+<section class="section">
+  <h1>💍 우리 결혼합니다 💍</h1>
+
+<p class="names">
+  신랑 : <span class="eng-name">Jack Vachon</span><br>
+  신부 : <span class="eng-name">Sohyun Kwag</span>
+</p>
+
+  <p class="date">Date : 2026.6.6 (Sat)</p>
+  <p class="place">Location : The 801<br>
+                                          801 Islington St STE 12, Portsmouth, NH 03801 미국</p>
+</section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <img src="images/jackandsohyun.jpg" alt="웨딩사진1">
+    <img src="images/sohyun ring.jpg" alt="웨딩사진2">
+    <img src="images/AI character.png" alt="웨딩사진3">
+  </section>
+
+<!-- MAP -->
+<section class="section">
+
+  <a class="map-btn"
+     href="https://maps.app.goo.gl/zrXBLZzSwCyiSZcTA"
+     target="_blank">
+    📍 오시는 길
+  </a>
+
+  <p class="map-text">
+    The 801<br>
+    801 Islington St STE 12,<br>
+    Portsmouth, NH 03801, USA
+  </p>
+
+</section>
+
+  <!-- BANK -->
+  <section class="section bank">
+
+    <h2>💌 마음 전하실 곳</h2>
+
+    <div class="bank-card">
+      <h3>신부 어머니</h3>
+      <p>
+        전용선 · 우리은행 303-149817-02-001
+        <button onclick="copyText('전용선 우리은행 303-149817-02-001')">복사</button>
+      </p>
+    </div>
+
+    <div class="bank-card">
+      <h3>신부 아버지</h3>
+      <p>
+        곽성목 · 우리은행 303-128706-02-001
+        <button onclick="copyText('곽성목 우리은행 303-128706-02-001')">복사</button>
+      </p>
+    </div>
+
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => alert("계좌번호가 복사되었습니다 💳"))
+        .catch(() => alert("복사 실패"));
+    }
+  </script>
+
+</body>
+</html>
