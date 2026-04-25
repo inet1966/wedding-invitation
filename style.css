@@ -23,7 +23,7 @@ body {
 }
 
 .invite-text {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.7;
   color: #666;
 }
@@ -31,7 +31,7 @@ body {
 /* Names */
 .names {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .eng-name {
@@ -49,7 +49,7 @@ body {
 
 /* Text */
 .date {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .address {
-  font-size: 14px;
+  font-size: 18px;
   color: #777;
   margin-top: 10px;
   line-height: 1.6;
@@ -103,7 +103,21 @@ body {
 
 .map-text {
   margin-top: 12px;
-  font-size: 14px;
+  font-size: 20px;
   color: #666;
   line-height: 1.6;
+}
+
+.map-images {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.map-img img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  margin: 10px 0;
 }
