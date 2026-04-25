@@ -92,6 +92,11 @@ body {
   max-width: 420px;
 }
 
+.bank .card p {
+  font-size: clamp(14px, 2.5vw, 18px); /* 👈 추가 */
+  line-height: 1.6; /* 👈 가독성 */
+}
+
 .bank button {
   margin-left: 10px;
   padding: 5px 10px;
@@ -99,6 +104,7 @@ body {
   background: #d88;
   color: white;
   border-radius: 6px;
+  font-size: clamp(12px, 2vw, 16px); /* 👈 추가 */
 }
 
 .map-text {
