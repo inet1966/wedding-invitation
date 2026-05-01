@@ -25,7 +25,7 @@
 
       <p class="names">
         Groom : 잭 바션<span class="eng-name">Jack Vachon</span><br>
-        Bride :  곽 소현<span class="eng-name">Sohyun Kwag</span><br>
+        Bride : 곽 소현<span class="eng-name">Sohyun Kwag</span><br>
       </p>
     </div>
   </section>
@@ -43,8 +43,15 @@
 
   <!-- GALLERY -->
   <section class="section gallery">
-    <img src="images/jacknsohyun2.png">
+    <video id="weddingVideo" autoplay muted playsinline controls onclick="this.play()" style="cursor:pointer;">
+      <source src="images/wedding.mp4" type="video/mp4">
+    </video>
+
     <img src="images/sohyun ring.jpg">
+    <img src="images/jacknsohyun2.png">
+    <img src="images/2.png">
+    <img src="images/3.png">
+    <img src="images/4.png">
     <img src="images/AI character.png">
   </section>
 
@@ -55,10 +62,10 @@
        target="_blank">
       📍 View Location
     </a>
- <!-- 이미지 2장 추가 -->
-  <div class="gallery">
-    <img src="images/the801-1.jpg">
-  </div>
+
+    <div class="gallery">
+      <img src="images/the801-1.jpg">
+    </div>
 
     <p class="map-text">
       The 801<br>
@@ -86,12 +93,34 @@
 
   </section>
 
+  <!-- 🎵 배경음악 -->
+  <audio id="bgm" loop>
+    <source src="music/wedding.mp3" type="audio/mpeg">
+  </audio>
+
   <!-- SCRIPT -->
   <script>
     function copyText(text) {
       navigator.clipboard.writeText(text)
         .then(() => alert("Copied 💳"));
     }
+
+    const bgm = document.getElementById('bgm');
+    const video = document.getElementById('weddingVideo');
+
+    // 첫 터치 시 배경음악 재생
+    document.addEventListener('click', () => {
+      if (bgm.paused) {
+        bgm.play();
+      }
+    }, { once: true });
+
+    // 영상 터치 시도 음악 시작 (보조)
+    video.addEventListener('click', () => {
+      if (bgm.paused) {
+        bgm.play();
+      }
+    }, { once: true });
   </script>
 
 </body>
