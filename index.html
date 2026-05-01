@@ -43,7 +43,7 @@
 
   <!-- GALLERY -->
   <section class="section gallery">
-    <video id="weddingVideo" autoplay muted playsinline controls onclick="this.play()" style="cursor:pointer;">
+    <video id="weddingVideo" autoplay muted playsinline loop controls onclick="this.play()" style="cursor:pointer;">
       <source src="images/wedding.mp4" type="video/mp4">
     </video>
 
@@ -99,29 +99,34 @@
   </audio>
 
   <!-- SCRIPT -->
-  <script>
-    function copyText(text) {
-      navigator.clipboard.writeText(text)
-        .then(() => alert("Copied 💳"));
+<script>
+  function copyText(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => alert("Copied 💳"));
+  }
+
+  const bgm = document.getElementById('bgm');
+  const video = document.getElementById('weddingVideo');
+
+  // 🎬 영상 종료 시 배경음악 자동 재생
+  video.addEventListener('ended', () => {
+    bgm.play();
+  });
+
+  // 👆 첫 사용자 터치 시 배경음악 재생 (모바일 필수 정책 대응)
+  document.addEventListener('click', () => {
+    if (bgm.paused) {
+      bgm.play();
     }
+  }, { once: true });
 
-    const bgm = document.getElementById('bgm');
-    const video = document.getElementById('weddingVideo');
-
-    // 첫 터치 시 배경음악 재생
-    document.addEventListener('click', () => {
-      if (bgm.paused) {
-        bgm.play();
-      }
-    }, { once: true });
-
-    // 영상 터치 시도 음악 시작 (보조)
-    video.addEventListener('click', () => {
-      if (bgm.paused) {
-        bgm.play();
-      }
-    }, { once: true });
-  </script>
+  // 🎬 영상 클릭 시도 음악 재생 (보조 안전장치)
+  video.addEventListener('click', () => {
+    if (bgm.paused) {
+      bgm.play();
+    }
+  }, { once: true });
+</script>
 
 </body>
 </html>
